@@ -92,7 +92,7 @@ public class Main {
             case 4:
                 while (query){
                     try {
-                        //CORREGIR CONTADORES I Y J?
+                        //CORREGIR Y TERMINAR LA COMPROBACIÓN
                         if (em.find(Instituto.class, i).getId() == em.find(Clase.class, i).getInstitutoId()) {
                             numeroAlumnos += em.find(Clase.class, i).getnAlumnos();
                             System.out.println(em.find(Instituto.class, i).getNombre() + " " + numeroAlumnos);
